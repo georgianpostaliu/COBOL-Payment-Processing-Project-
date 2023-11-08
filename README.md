@@ -1,7 +1,4 @@
 # COBOL-Payment-Processing-Project-
-Summary:
-
-This COBOL program serves as a payment processor, accepting payment details from users, validating the input, performing currency conversion, deducting processing fees, and categorizing payments into accepted and rejected transactions. It handles multiple card types, countries, and rejection scenarios, ensuring accurate processing and clear reporting of accepted and rejected payments. The structured approach allows for easy modification and extension to accommodate additional payment processing logic or integration into larger financial systems.
 
 This COBOL project, identified as COBIF01, is designed to process payment information provided through user input. The program reads payment data for various transactions, validates the input, calculates the payment amount based on card type and country, and categorizes the transactions into accepted and rejected payments. The processed payment details are then displayed in a specified format. Let's break down the structure and functionality of this COBOL program:
 Identification Division:
@@ -33,3 +30,7 @@ Procedure Division:
         Accepted payment details (name, converted amount) are displayed if the card type is not DIN (Diners Club) using the DISPLAY WS-OUTPUT-FILE UPON CNSL statement.
         Rejected payment details (card number, amount, country, rejection reason) are displayed for rejected payments using the DISPLAY WS-REJECT-FILE UPON CNSL statement.
         The program stops execution after processing the input payments (STOP RUN).
+        
+Summary:
+
+This COBOL program serves as a payment processor, accepting payment details from users, validating the input, performing currency conversion, deducting processing fees, and categorizing payments into accepted and rejected transactions. It handles multiple card types, countries, and rejection scenarios, ensuring accurate processing and clear reporting of accepted and rejected payments. The structured approach allows for easy modification and extension to accommodate additional payment processing logic or integration into larger financial systems.
